@@ -1,0 +1,175 @@
+/* 
+	Twine CSS Template
+	
+	Simple CSS Template to help Twine authors change 
+		the default appearance
+		
+	Most current version, and license information at:
+	https://github.com/danieltalsky/twine-css-template
+	
+	- Version:  1.0
+	- Author:   Daniel Talsky <daniel@danieltalsky.com>
+
+	
+	
+	COLORS
+
+	The default colors I picked are based on the Solarized Dark theme, 
+	optimized for readability and most often used in computer programming.
+	Change them to make your game have whatever mood you want, just make
+	sure it's readable!
+
+	- background  				#002b36
+	- sidebar background   		#ff9900
+	- main text color 			#cc9933
+	- main sidebar text color   #f0f0f0
+
+	FONTS
+	
+	You can use a traditional HTML font stack, but having access to
+	unique fonts keeps your game looking unique.  I picked 
+	PT Sans Caption, but you can pick any combination of google fonts
+	and they will generate this import line for you.
+	
+	Google Fonts:
+	https://fonts.google.com/
+*/
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700');
+
+/* These are the default options for the entire browser window */
+body {	
+	background-color: #002b36; 
+	color: #ADC3D8;
+	font-family: 'PT Sans Caption', sans-serif;
+	font-size: 1.1em;
+}
+
+/* These are the default options for the story area (not the sidebar for instance) */
+tw-story {
+    
+}
+
+/* These are the default options for the each passage area */
+tw-passage {
+    max-width: 55em;
+    margin: 0 auto 0 auto;
+}
+
+/* The sidebar with scoring and the back button */
+tw-sidebar { 
+	background: ;
+
+	/* Uncomment to hide the sidebar completely */
+	/* display: none; */ 
+}
+
+/*
+  BASIC LINK STYLES
+  
+  This covers both weird Harlowe links as well as plain and Snowman links
+*/
+.enchantment-link, tw-link, a {
+	color: #ec40eb; font-weight: bold; text-shadow: 0 0 5px #ef2700;
+}
+/* Links that have already been visited */
+.enchantment-link:visited, tw-link:visited, .enchantment-link.visited, tw-link.visited, a:visited {
+	color: #991a98; font-weight: bold; text-shadow: 0 0 5px #ef2700;
+}
+/* Links when the mouse is over them */
+.enchantment-link:hover, tw-link:hover, a:hover {
+	color: skyblue; font-weight: bold; text-shadow: 0 0 5px #ef2700;
+}
+
+
+/*
+	EFFECTS
+
+	The pulse-in effect is good for text that will appear based on a user
+	action.  In Twine2, text will just blink into being and the user might
+	not notice.  If you wrap your text in:
+	<span class="pulse-in">Text that gets shown.</span>
+	
+	It will appear with a bright colored pulse that makes it clear it just
+	appeared.
+*/
+@keyframes pulsein {
+  from { color: #00fbf7; text-shadow: 0 0 1em #00fbf7; }
+  to { color: #ADC3D8; text-shadow: 0 0; }
+}
+.pulse-in {
+    color: #ADC3D8;
+    font-size: 1.1em;
+    animation: pulsein 1.2s linear 3;
+}
+span.pulse-in {
+  font-size: inherit;
+}
+
+/* IMAGE STYLES */
+
+/* styles for all images by default */
+img {
+	/* for example */
+	/* border: 1px solid black; */
+}
+/* 
+   images with <img class="full-width"> will stretch 
+   to the full width of the story 
+*/
+img.full-width {
+	display:block; margin-right:auto;margin-left:auto; 
+	width: 100%;
+}
+
+
+
+
+
+/*
+	TABLET-SPECIFIC RULES / SMALL WIDTH BROWSERS
+*/
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+
+  tw-story {
+	  font-size: 3em;
+	  width: 100%;
+	  max-width: 95%;
+	  margin: 0 auto 0 auto;
+	  padding: 20% 10%;
+  }
+
+  tw-passage {
+	  width: 100%;
+  }  
+
+}	
+
+/*
+	PHONE-SPECIFIC RULES
+	
+	You often want to make fonts much larger.
+*/
+@media only screen and (max-device-width: 480px) {
+
+  tw-story {
+	  font-size: 3.2em;
+	  width: 100%;
+	  max-width: 95%;
+	  margin: 0 auto 0 auto;
+	  padding: 20% 5%;
+  }
+
+  tw-passage {
+	  width: 100%;
+  }  
+  
+}
+
+
+
+
+
+
+
+
+
