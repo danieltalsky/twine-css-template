@@ -7,6 +7,9 @@
 	Most current version, and license information at:
 	https://github.com/danieltalsky/twine-css-template
 	
+	Special thanks to furkle's Twine 2 Harlowe CSS Tutorial
+	no longer up on the web but helped a lot with the basics.
+	
 	- Version:  1.0
 	- Author:   Daniel Talsky <daniel@danieltalsky.com>
 
@@ -20,9 +23,10 @@
 	sure it's readable!
 
 	- background  				#002b36
-	- sidebar background   		#ff9900
-	- main text color 			#cc9933
-	- main sidebar text color   #f0f0f0
+	- sidebar background   		#eee8d5
+	
+	- main text color 			#839496
+	- main sidebar text color   #93a1a1
 
 	FONTS
 	
@@ -39,25 +43,26 @@
 /* These are the default options for the entire browser window */
 body {	
 	background-color: #002b36; 
-	color: #ADC3D8;
+	color: #839496;
 	font-family: 'PT Sans Caption', sans-serif;
 	font-size: 1.1em;
 }
 
-/* These are the default options for the story area (not the sidebar for instance) */
+/* Harlowe Only: These are the default options for the story area */
 tw-story {
     
 }
 
-/* These are the default options for the each passage area */
+/* Harlowe Only: These are the default options for the each passage area */
 tw-passage {
     max-width: 55em;
     margin: 0 auto 0 auto;
 }
 
-/* The sidebar with scoring and the back button */
+/* Harlowe Only: The sidebar with scoring and the back button */
 tw-sidebar { 
-	background: ;
+	background: #eee8d5;
+	color: #93a1a1;
 
 	/* Uncomment to hide the sidebar completely */
 	/* display: none; */ 
