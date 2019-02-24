@@ -23,7 +23,7 @@
 	sure it's readable!
 
 	- background  				#002b36
-	- sidebar background   		#eee8d5
+	- sidebar background   		#073642
 	
 	- main text color 			#839496
 	- main sidebar text color   #93a1a1
@@ -41,16 +41,11 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700');
 
 /* These are the default options for the entire browser window */
-body {	
+body, tw-story {	
 	background-color: #002b36; 
 	color: #839496;
 	font-family: 'PT Sans Caption', sans-serif;
 	font-size: 1.1em;
-}
-
-/* Harlowe Only: These are the default options for the story area */
-tw-story {
-    
 }
 
 /* Harlowe Only: These are the default options for the each passage area */
@@ -61,8 +56,9 @@ tw-passage {
 
 /* Harlowe Only: The sidebar with scoring and the back button */
 tw-sidebar { 
-	background: #eee8d5;
+	background: #073642;
 	color: #93a1a1;
+	border-radius: 10px;
 
 	/* Uncomment to hide the sidebar completely */
 	/* display: none; */ 
@@ -74,15 +70,15 @@ tw-sidebar {
   This covers both weird Harlowe links as well as plain and Snowman links
 */
 .enchantment-link, tw-link, a {
-	color: #ec40eb; font-weight: bold; text-shadow: 0 0 5px #ef2700;
+	color: #6c71c4; font-weight: bold; text-shadow: 0 0 5px #6c71c4;
 }
 /* Links that have already been visited */
 .enchantment-link:visited, tw-link:visited, .enchantment-link.visited, tw-link.visited, a:visited {
-	color: #991a98; font-weight: bold; text-shadow: 0 0 5px #ef2700;
+	color: #268bd2; font-weight: bold; text-shadow: 0 0 5px #268bd2;
 }
 /* Links when the mouse is over them */
 .enchantment-link:hover, tw-link:hover, a:hover {
-	color: skyblue; font-weight: bold; text-shadow: 0 0 5px #ef2700;
+	color: #2aa198; font-weight: bold; text-shadow: 0 0 5px #2aa198;
 }
 
 
@@ -169,12 +165,4 @@ img.full-width {
   }  
   
 }
-
-
-
-
-
-
-
-
 
