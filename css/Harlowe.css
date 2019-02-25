@@ -87,7 +87,13 @@ tw-sidebar {
 .enchantment-link, tw-link, a {
 	color: #cb4b16; 
 	font-weight: bold; 
-	/* Adds a glow to links.  You can make it a seperate color from the text */
+	/* Adds a glow to links.  You can make it a seperate color from the text 
+	   The numbers mean, in order: 
+	   - How far to the right of the letter (0 means radiating from the letter)
+	   - How far below the letter
+	   - How much blur does the glow/shadow have
+	   - What color is the shadow
+	*/
 	text-shadow: 0 0 5px #cb4b16;
 }
 /* Links that have already been visited */
