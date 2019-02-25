@@ -12,7 +12,9 @@ Modify fonts and colors to your liking following the instructions in the CSS, or
 
 ## Notes
 
-This has been used and tested very little, and currently only has been tested on Harlowe.  I am working on a version that works with SugarCube as well.
+Right now, there is only a template for customizing Harlowe games. I'm
+working on a template for SugarCube, but until then, use the official
+basic template, called Bleached: http://www.motoslave.net/sugarcube/2/
 
 ## MIT Licensed
 
