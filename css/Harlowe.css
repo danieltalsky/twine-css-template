@@ -40,7 +40,7 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700');
 
 /* These are the default options for the entire browser window */
-body, tw-story {	
+tw-story {	
 	background-color: #002b36; 
 	/* Color is the foreground / font color */
 	color: #839496;
