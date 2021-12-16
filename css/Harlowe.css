@@ -47,7 +47,7 @@ tw-story {
 	/* Make sure the first font listed is one of the fonts you imported above */
 	font-family: 'PT Sans Caption', sans-serif;
 	/* This makes the font size for normal letters just a little bit bigger than default */
-	font-size: 1.1em;
+	font-size: 1.25em;
 }
 
 /* These are the default options for the each passage area */
