@@ -64,7 +64,7 @@ tw-passage {
     margin: 0 auto 0 auto;
 }
 
-/* The sidebar with scoring and the back button */
+/* The sidebar with scoring and the undo/redo buttons */
 tw-sidebar { 
 	background: #073642;
 	color: #93a1a1;
@@ -74,8 +74,14 @@ tw-sidebar {
 		
 	*/
 	border-radius: 10px;
-
+	
 	/* Uncomment to hide the sidebar completely */
+	/* display: none; */ 
+}
+
+/* Seperately hide or style the Undo and Redo button seperately from the sidebar */
+tw-icon[title=Undo], tw-icon[title=Redo] {
+	/* Uncomment to hide the buttons completely */
 	/* display: none; */ 
 }
 
