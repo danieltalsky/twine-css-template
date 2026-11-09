@@ -48,20 +48,32 @@ tw-story {
 	font-family: 'PT Sans Caption', sans-serif;
 	/* This makes the font size for normal letters just a little bit bigger than default */
 	font-size: 1.25em;
+	/* 
+		Harlowe makes tw-story a flex container with a column direction
+		(display: flex; flex-direction: column).  This centers the child
+		tw-passage element horizontally along the cross axis.
+	*/
+	align-items: center;
 }
 
 /* These are the default options for the each passage area */
 tw-passage {
 	/* 
-		This lets the story take up most of its width up to a maximum readable width 
-		an `em` is about the width of one of your letters.  max-width lets the size
-		get wider and wider with the size of the window but only to a sane point
+		This makes the story column a fixed, readable width.  An `em` is
+		about the width of one of your letters, so 55em is roughly 55
+		characters wide - a comfortable line length.
+		
+		`width` locks the column to that size, while `max-width: 100%` lets
+		it shrink on narrower windows instead of overflowing.
+		
+		Horizontal centering is handled by `align-items: center` on the
+		parent tw-story element (see above), since tw-story is a flex
+		container.
 		
 		It's ok to experiment with making this smaller or larger
 	*/
-    max-width: 55em;
-	/* This centers the main story column in the window */
-    margin: 0 auto 0 auto;
+    width: 55em;
+    max-width: 100%;
 }
 
 /* The sidebar with scoring and the undo/redo buttons */
