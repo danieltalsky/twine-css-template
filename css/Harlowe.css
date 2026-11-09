@@ -48,20 +48,19 @@ tw-story {
 	font-family: 'PT Sans Caption', sans-serif;
 	/* This makes the font size for normal letters just a little bit bigger than default */
 	font-size: 1.25em;
+	/* Centers tw-passage. */
+	align-items: center;
 }
 
 /* These are the default options for the each passage area */
 tw-passage {
 	/* 
-		This lets the story take up most of its width up to a maximum readable width 
-		an `em` is about the width of one of your letters.  max-width lets the size
-		get wider and wider with the size of the window but only to a sane point
-		
-		It's ok to experiment with making this smaller or larger
+		This makes the story column a fixed, readable width.  An `em` is
+		about the width of one of your letters, so 55em is roughly 55
+		characters wide - a comfortable line length.
 	*/
-    max-width: 55em;
-	/* This centers the main story column in the window */
-    margin: 0 auto 0 auto;
+    width: 55em;
+    max-width: 100%;
 }
 
 /* The sidebar with scoring and the undo/redo buttons */
